@@ -1,0 +1,22 @@
+{
+  "name": "text-editor",
+  "version": "1.0.0",
+  "description": "A word processor for writers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleymays/text-editor.git"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "Ashley Mays",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashleymays/text-editor/issues"
+  },
+  "homepage": "https://github.com/ashleymays/text-editor#readme"
+}
