@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       translate: {
-        negative50: '-50%'
+        neg50: '-50%'
       }
     }
   },
