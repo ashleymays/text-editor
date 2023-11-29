@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Specifically for CodeSandbox
+.codesandbox
+.devcontainer
