@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       translate: {
-        neg50: '-50%'
+        'neg50': '-50%'
+      },
+      fontFamily: {
+        'mono': ['"Noto Sans Mono"', 'monospace']
       }
     }
   },
