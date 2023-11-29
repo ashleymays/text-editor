@@ -1,4 +1,4 @@
-export function handleFullscreen() {
+export function toggleFullscreen() {
   if (document.fullscreenElement === null) {
     document.documentElement.requestFullscreen();
   } else {
@@ -6,15 +6,18 @@ export function handleFullscreen() {
   }
 }
 
-export function handleFileDownload() {
+export function downloadFile() {
   const innerText = window.localStorage.getItem('innerText');
-  const blob = new Blob([innerText], { type: 'text/plain' });
   const link = document.createElement('a');
 
-  const fileName = `${getFormattedDateString()} Online Text Editor`;
-
-  link.setAttribute('download', fileName);
-  link.setAttribute('href', URL.createObjectURL(blob));
+  link.setAttribute(
+    'download',
+    `${getFormattedDateString()} Online Text Editor`
+  );
+  link.setAttribute(
+    'href',
+    URL.createObjectURL(new Blob([innerText], { type: 'text/plain' }))
+  );
   link.click();
 }
 

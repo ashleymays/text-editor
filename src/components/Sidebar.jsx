@@ -1,18 +1,18 @@
 import { Download, Maximize } from 'react-feather';
 import Option from './Option';
-import { handleFullscreen, handleFileDownload } from '../lib/optionHandlers';
+import { toggleFullscreen, downloadFile } from '../lib/optionHandlers';
 
 function Sidebar() {
   const options = [
     {
       title: 'Fullscreen',
       icon: <Maximize size={20} />,
-      onClick: handleFullscreen
+      onClick: toggleFullscreen
     },
     {
       title: 'Download',
       icon: <Download size={20} />,
-      onClick: handleFileDownload
+      onClick: downloadFile
     }
   ];
 
