@@ -2,15 +2,17 @@ import { Download, Maximize } from 'react-feather';
 import Option from './Option';
 import { toggleFullscreen, downloadFile } from '../lib/optionHandlers';
 
+const optionIconSize = 18;
+
 const options = [
   {
     title: 'Fullscreen',
-    icon: <Maximize size={18} />,
+    icon: <Maximize size={optionIconSize} />,
     onClick: toggleFullscreen
   },
   {
     title: 'Download',
-    icon: <Download size={18} />,
+    icon: <Download size={optionIconSize} />,
     onClick: downloadFile
   }
 ];
