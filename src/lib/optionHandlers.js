@@ -12,7 +12,7 @@ export function downloadFile() {
 
   link.setAttribute(
     'download',
-    `${getFormattedDateString()} Online Text Editor`
+    `${getFormattedDateString()} Minimal Text Editor`
   );
   link.setAttribute(
     'href',
