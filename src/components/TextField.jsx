@@ -5,7 +5,9 @@
  *  - hover: text-neutral-500
  *
  * Dark Mode:
- *  - text: text-
+ *  - text: text-neutral-400
+ *  - bg: #141414
+ *  - hover: text-neutral-700
  */
 function TextField() {
   const handleChange = (event) => {
