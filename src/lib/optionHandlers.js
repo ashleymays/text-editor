@@ -21,10 +21,6 @@ export function downloadFile() {
   link.click();
 }
 
-export function clearText() {
-  window.localStorage.clear();
-}
-
 function getFormattedDateString() {
   return new Date().toLocaleDateString().replaceAll('/', '-');
 }
