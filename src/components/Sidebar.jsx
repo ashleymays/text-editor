@@ -6,22 +6,20 @@ function Sidebar() {
   const options = [
     {
       title: 'Fullscreen',
-      icon: <Maximize size={20} />,
+      icon: <Maximize size={18} />,
       onClick: toggleFullscreen
     },
     {
       title: 'Download',
-      icon: <Download size={20} />,
+      icon: <Download size={18} />,
       onClick: downloadFile
     }
   ];
 
   return (
-    <aside className="fixed top-1/2 right-0 px-3.5 flex flex-col items-end gap-y-7">
+    <aside className="fixed top-4 lg:top-20 xl:top-20 2xl:top-20 right-0 px-5 flex flex-col items-end gap-y-7">
       {options.map((option) => (
-        <Option key={option.title} {...option}>
-          {option.icon}
-        </Option>
+        <Option key={option.title} {...option} />
       ))}
     </aside>
   );
