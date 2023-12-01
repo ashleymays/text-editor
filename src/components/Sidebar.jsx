@@ -17,7 +17,7 @@ function Sidebar() {
   ];
 
   return (
-    <aside className="fixed top-6 lg:top-16 xl:top-16 2xl:top-16 right-0 px-5 flex flex-col items-end gap-y-7">
+    <aside className="sticky top-0 h-screen px-2 py-6 lg:py-16 xl:py-16 2xl:py-16 flex flex-col gap-y-7">
       {options.map((option) => (
         <Option key={option.title} {...option} />
       ))}

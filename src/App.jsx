@@ -3,10 +3,10 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <>
+    <main className="flex">
       <TextField />
       <Sidebar />
-    </>
+    </main>
   );
 }
 
