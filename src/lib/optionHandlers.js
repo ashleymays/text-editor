@@ -6,7 +6,7 @@ export function toggleFullscreen() {
   }
 }
 
-export function downloadFile() {
+export function downloadTextFile() {
   const text = JSON.parse(window.localStorage.getItem('text'));
   const link = document.createElement('a');
 
