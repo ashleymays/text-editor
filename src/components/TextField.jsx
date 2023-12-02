@@ -1,16 +1,6 @@
 import TextareaAutosize from 'react-textarea-autosize';
 import useLocalStorage from '../hooks/useLocalStorage';
-/**
- * Light Mode:
- *  - text: text-neutral-900
- *  - bg: #f8f8f8
- *  - hover: text-neutral-500
- *
- * Dark Mode:
- *  - text: text-neutral-400
- *  - bg: #141414
- *  - hover: text-neutral-700
- */
+
 function TextField() {
   const [text, setText] = useLocalStorage('text', '');
 
