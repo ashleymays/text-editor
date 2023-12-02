@@ -7,7 +7,7 @@ export function toggleFullscreen() {
 }
 
 export function downloadFile() {
-  const innerText = window.localStorage.getItem('innerText');
+  const text = window.localStorage.getItem('text');
   const link = document.createElement('a');
 
   link.setAttribute(
@@ -16,7 +16,7 @@ export function downloadFile() {
   );
   link.setAttribute(
     'href',
-    URL.createObjectURL(new Blob([innerText], { type: 'text/plain' }))
+    URL.createObjectURL(new Blob([text], { type: 'text/plain' }))
   );
   link.click();
 }
