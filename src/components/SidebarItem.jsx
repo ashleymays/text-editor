@@ -1,4 +1,4 @@
-function Option({ icon, title, onClick }) {
+function SidebarItem({ icon, title, onClick }) {
   return (
     <button
       type="button"
@@ -11,4 +11,4 @@ function Option({ icon, title, onClick }) {
   );
 }
 
-export default Option;
+export default SidebarItem;
