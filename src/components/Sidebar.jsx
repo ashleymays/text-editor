@@ -1,31 +1,37 @@
-import { Download, Maximize, UploadCloud } from 'react-feather';
+import {
+  CornersOut,
+  DownloadSimple,
+  GoogleDriveLogo
+} from '@phosphor-icons/react';
 import SidebarItem from './SidebarItem';
 import { toggleFullscreen, downloadTextFile } from '../lib/sidebarItemHandlers';
 
-const sidebarItemIconSize = 18;
+const sidebarItemIconSize = 20;
 const sidebarItems = [
   {
     title: 'Fullscreen',
-    icon: <Maximize size={sidebarItemIconSize} />,
+    icon: <CornersOut size={sidebarItemIconSize} />,
     onClick: toggleFullscreen
   },
   {
     title: 'Download',
-    icon: <Download size={sidebarItemIconSize} />,
+    icon: <DownloadSimple size={sidebarItemIconSize} />,
     onClick: downloadTextFile
   },
   {
     title: 'Save to Google Drive',
-    icon: <UploadCloud size={sidebarItemIconSize} />,
+    icon: <GoogleDriveLogo size={sidebarItemIconSize} />,
     onClick: () => {}
   }
 ];
 
 function Sidebar() {
   return (
-    <aside className="fixed top-0 bottom-0 right-0 w-12 h-full flex flex-col items-center gap-y-7 py-6 lg:py-16 xl:py-16 2xl:py-16">
+    <aside className="fixed top-0 bottom-0 right-0 w-14 h-full flex flex-col items-center gap-y-9 py-6 lg:py-16 xl:py-16 2xl:py-16">
       {sidebarItems.map((item) => (
-        <SidebarItem key={item.title} {...item} />
+        <SidebarItem key={item.title} {...item}>
+          {item.icon}
+        </SidebarItem>
       ))}
     </aside>
   );
