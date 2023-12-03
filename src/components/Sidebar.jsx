@@ -1,4 +1,4 @@
-import { Download, Maximize } from 'react-feather';
+import { Download, Maximize, UploadCloud } from 'react-feather';
 import SidebarItem from './SidebarItem';
 import { toggleFullscreen, downloadTextFile } from '../lib/sidebarItemHandlers';
 
@@ -13,6 +13,11 @@ const sidebarItems = [
     title: 'Download',
     icon: <Download size={sidebarItemIconSize} />,
     onClick: downloadTextFile
+  },
+  {
+    title: 'Save to Google Drive',
+    icon: <UploadCloud size={sidebarItemIconSize} />,
+    onClick: () => {}
   }
 ];
 
