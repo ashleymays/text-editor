@@ -18,7 +18,7 @@ const sidebarItems = [
 
 function Sidebar() {
   return (
-    <aside className="fixed top-0 bottom-0 right-0 w-10 md:w-12 lg:w-12 xl:w-14 2xl:w-14 h-full flex flex-col items-center py-6 md:py-16 lg:py-16 xl:py-16 2xl:py-16 gap-y-8">
+    <aside className="fixed top-0 bottom-0 right-0 w-10 md:w-12 lg:w-12 xl:w-14 2xl:w-14 h-full flex flex-col items-center py-6 md:py-16 lg:py-16 xl:py-16 2xl:py-16 gap-y-5">
       {sidebarItems.map((item) => (
         <SidebarItem key={item.title} {...item}>
           {item.icon}
