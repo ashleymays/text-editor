@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react';
 import useLocalStorage from '../useLocalStorage';
 
-function cleanUp() {
+function clearStorage() {
   window.localStorage.setItem('test', null);
 }
 
@@ -10,7 +10,7 @@ it('should initialize the storage item', () => {
   const { result } = renderHook(() => useLocalStorage('test', initialValue));
   const value = result.current[0];
   expect(value).toBe(initialValue);
-  cleanUp();
+  clearStorage();
 });
 
 it('should update storage items', () => {
@@ -25,12 +25,12 @@ it('should update storage items', () => {
   const value = result.current[0];
 
   expect(value).toBe(updatedValue);
-  cleanUp();
+  clearStorage();
 });
 
 it('should return empty string for undefined initial value', () => {
   const { result } = renderHook(() => useLocalStorage('test'));
   const value = result.current[0];
   expect(value).toBe('');
-  cleanUp();
+  clearStorage();
 });
