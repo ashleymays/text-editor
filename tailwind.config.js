@@ -8,9 +8,6 @@ export default {
     extend: {
       translate: {
         neg50: '-50%'
-      },
-      colors: {
-        black: '#070709'
       }
     }
   },
