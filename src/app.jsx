@@ -1,5 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
-
 import TextField from './components/text-field';
 import Sidebar from './components/sidebar';
 
@@ -8,7 +6,6 @@ function App() {
     <>
       <TextField />
       <Sidebar />
-      <Analytics mode={'production'} />
     </>
   );
 }
