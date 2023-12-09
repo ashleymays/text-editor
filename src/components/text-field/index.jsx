@@ -1,5 +1,5 @@
 import TextareaAutosize from 'react-textarea-autosize';
-import useLocalStorage from '../hooks/useLocalStorage';
+import useLocalStorage from '../../hooks/useLocalStorage';
 
 function TextField() {
   const [text, setText] = useLocalStorage('text', '');
