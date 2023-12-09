@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react';
-import useLocalStorage from '../useLocalStorage';
+import useLocalStorage from '../use-local-storage';
 
 function clearStorage() {
   window.localStorage.setItem('test', null);
