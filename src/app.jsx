@@ -1,5 +1,5 @@
-import TextField from './components/TextField';
-import Sidebar from './components/Sidebar';
+import TextField from './components/text-field';
+import Sidebar from './components/sidebar';
 
 function App() {
   return (
