@@ -6,6 +6,9 @@ export default {
       mono: ['"Fira Code"', 'monospace']
     },
     extend: {
+      padding: {
+        '45vh': '45vh'
+      },
       translate: {
         neg50: '-50%'
       }
