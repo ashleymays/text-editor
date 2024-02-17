@@ -6,9 +6,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "serve"
+    "start": "tsc"
   },
   "dependencies": {
-    "serve": "^14.2.1"
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }
